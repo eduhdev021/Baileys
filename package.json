@@ -1,6 +1,6 @@
 {
   "name": "@eduh_dev021/baileys",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "A complete, production-grade WhatsApp Web library for Node.js — zero WASM, zero runtime dependencies, pure TypeScript crypto, self-contained addon utilities, ESM + CJS builds, interactive messages, groups, communities, channels, business tools and more. Drop-in replacement for the Baileys v7 API.",
   "main": "./cjs/lib/index.js",
   "module": "lib/index.js",
@@ -128,7 +128,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eduh_dev021/baileys.git"
+    "url": "git+https://github.com/eduhdev021/Baileys.git"
   },
   "files": [
     "lib/**/*",
@@ -149,7 +149,7 @@
     "whatsapp-bot",
     "whatsapp-web"
   ],
-  "homepage": "https://github.com/eduh_dev021/baileys#readme",
+  "homepage": "https://github.com/eduhdev021/Baileys#readme",
   "author": "eduh_dev021",
   "license": "MIT",
   "dependencies": {
