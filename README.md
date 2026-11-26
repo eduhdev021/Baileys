@@ -1,5 +1,9 @@
 # @eduh_dev021/baileys
 
+<p align="center">
+  <img src="./assets/banner.png" alt="Baileys" width="100%" />
+</p>
+
 ![npm version](https://img.shields.io/npm/v/@eduh_dev021/baileys)
 ![node version](https://img.shields.io/node/v/@eduh_dev021/baileys)
 ![license](https://img.shields.io/npm/l/@eduh_dev021/baileys)
