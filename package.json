@@ -1,0 +1,175 @@
+{
+  "name": "@eduh_dev021/baileys",
+  "version": "1.1.7",
+  "description": "A complete, production-grade WhatsApp Web library for Node.js — zero WASM, zero runtime dependencies, pure TypeScript crypto, self-contained addon utilities, ESM + CJS builds, interactive messages, groups, communities, channels, business tools and more. Drop-in replacement for the Baileys v7 API.",
+  "main": "./cjs/lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js",
+      "require": "./cjs/lib/index.js",
+      "default": "./lib/index.js"
+    },
+    "./lib": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js",
+      "require": "./cjs/lib/index.js"
+    },
+    "./lib/*.js": {
+      "types": "./lib/*.d.ts",
+      "import": "./lib/*.js",
+      "require": "./cjs/lib/*.js"
+    },
+    "./lib/*": {
+      "types": "./lib/*.d.ts",
+      "import": "./lib/*.js",
+      "require": "./cjs/lib/*.js"
+    },
+    "./lib/Addon": {
+      "types": "./lib/Addon/index.d.ts",
+      "import": "./lib/Addon/index.js",
+      "require": "./cjs/lib/Addon/index.js"
+    },
+    "./lib/Defaults": {
+      "types": "./lib/Defaults/index.d.ts",
+      "import": "./lib/Defaults/index.js",
+      "require": "./cjs/lib/Defaults/index.js"
+    },
+    "./lib/Signal/Group": {
+      "types": "./lib/Signal/Group/index.d.ts",
+      "import": "./lib/Signal/Group/index.js",
+      "require": "./cjs/lib/Signal/Group/index.js"
+    },
+    "./lib/Socket": {
+      "types": "./lib/Socket/index.d.ts",
+      "import": "./lib/Socket/index.js",
+      "require": "./cjs/lib/Socket/index.js"
+    },
+    "./lib/Socket/Client": {
+      "types": "./lib/Socket/Client/index.d.ts",
+      "import": "./lib/Socket/Client/index.js",
+      "require": "./cjs/lib/Socket/Client/index.js"
+    },
+    "./lib/Store": {
+      "types": "./lib/Store/index.d.ts",
+      "import": "./lib/Store/index.js",
+      "require": "./cjs/lib/Store/index.js"
+    },
+    "./lib/Transport": {
+      "types": "./lib/Transport/index.d.ts",
+      "import": "./lib/Transport/index.js",
+      "require": "./cjs/lib/Transport/index.js"
+    },
+    "./lib/Types": {
+      "types": "./lib/Types/index.d.ts",
+      "import": "./lib/Types/index.js",
+      "require": "./cjs/lib/Types/index.js"
+    },
+    "./lib/Utils": {
+      "types": "./lib/Utils/index.d.ts",
+      "import": "./lib/Utils/index.js",
+      "require": "./cjs/lib/Utils/index.js"
+    },
+    "./lib/WABinary": {
+      "types": "./lib/WABinary/index.d.ts",
+      "import": "./lib/WABinary/index.js",
+      "require": "./cjs/lib/WABinary/index.js"
+    },
+    "./lib/WACrypto": {
+      "import": "./lib/WACrypto/index.js",
+      "require": "./cjs/lib/WACrypto/index.js"
+    },
+    "./lib/WAM": {
+      "types": "./lib/WAM/index.d.ts",
+      "import": "./lib/WAM/index.js",
+      "require": "./cjs/lib/WAM/index.js"
+    },
+    "./lib/WAUSync": {
+      "types": "./lib/WAUSync/index.d.ts",
+      "import": "./lib/WAUSync/index.js",
+      "require": "./cjs/lib/WAUSync/index.js"
+    },
+    "./lib/WAUSync/Protocols": {
+      "types": "./lib/WAUSync/Protocols/index.d.ts",
+      "import": "./lib/WAUSync/Protocols/index.js",
+      "require": "./cjs/lib/WAUSync/Protocols/index.js"
+    },
+    "./cjs/*": "./cjs/*",
+    "./WAProto": {
+      "types": "./WAProto/index.d.ts",
+      "import": "./WAProto/index.js",
+      "require": "./cjs/WAProto/index.js"
+    },
+    "./WAProto/index.js": {
+      "types": "./WAProto/index.d.ts",
+      "import": "./WAProto/index.js",
+      "require": "./cjs/WAProto/index.js"
+    },
+    "./WAProto/*.js": {
+      "types": "./WAProto/*.d.ts",
+      "import": "./WAProto/*.js",
+      "require": "./cjs/WAProto/*.js"
+    },
+    "./WAProto/*": {
+      "types": "./WAProto/*.d.ts",
+      "import": "./WAProto/*.js",
+      "require": "./cjs/WAProto/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "preinstall": "node ./engine-requirements.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduh_dev021/baileys.git"
+  },
+  "files": [
+    "lib/**/*",
+    "cjs/**/*",
+    "WAProto/**/*",
+    "tests/**/*",
+    "engine-requirements.js"
+  ],
+  "keywords": [
+    "automation",
+    "baileys",
+    "bot",
+    "interactive-messages",
+    "js-whatsapp",
+    "multi-device",
+    "whatsapp",
+    "whatsapp-api",
+    "whatsapp-bot",
+    "whatsapp-web"
+  ],
+  "homepage": "https://github.com/eduh_dev021/baileys#readme",
+  "author": "eduh_dev021",
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/image": "^1.16.0",
+    "ws": "^8.13.0"
+  },
+  "peerDependencies": {
+    "better-sqlite3": ">=11.0.0",
+    "jimp": "^1.6.0",
+    "sharp": ">=0.33.0"
+  },
+  "peerDependenciesMeta": {
+    "better-sqlite3": {
+      "optional": true
+    },
+    "jimp": {
+      "optional": true
+    },
+    "sharp": {
+      "optional": true
+    }
+  }
+}
